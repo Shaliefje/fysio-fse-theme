@@ -2,7 +2,11 @@
   "version": 2,
   "settings": {
     "custom": {
-      "colorSchemes": ["primary", "musician", "secondary"]
+      "colorSchemes": [
+        "primary",
+        "musician",
+        "secondary"
+      ]
     },
     "layout": {
       "contentSize": "800px",
@@ -10,13 +14,41 @@
     },
     "color": {
       "palette": [
-        { "slug": "primary", "color": "#1A3827", "name": "Primary Green" },
-        { "slug": "musician", "color": "#2D0C23", "name": "Musician Purple" },
-        { "slug": "secondary", "color": "#8CAF12", "name": "Secondary Green" },
-        { "slug": "light-gray", "color": "#F5F5F5", "name": "Light Gray" },
-        { "slug": "white", "color": "#FFFFFF", "name": "White" },
-        { "slug": "black", "color": "#000000", "name": "Black" },
-        { "slug": "accent-yellow", "color": "#F7C948", "name": "Accent Yellow" }
+        {
+          "slug": "primary",
+          "color": "#1A3827",
+          "name": "Primary"
+        },
+        {
+          "slug": "musician",
+          "color": "#2D0C23",
+          "name": "Musician"
+        },
+        {
+          "slug": "secondary",
+          "color": "#8CAF12",
+          "name": "Secondary"
+        },
+        {
+          "slug": "light-gray",
+          "color": "#F5F5F5",
+          "name": "Light Gray"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "accent-yellow",
+          "color": "#F7C948",
+          "name": "Accent Yellow"
+        }
       ],
       "background": true,
       "text": true
@@ -30,12 +62,36 @@
         }
       ],
       "fontSizes": [
-        { "slug": "small", "size": "0.875rem", "name": "Small" },
-        { "slug": "normal", "size": "1rem", "name": "Normal" },
-        { "slug": "medium", "size": "1.25rem", "name": "Medium" },
-        { "slug": "large", "size": "1.5rem", "name": "Large" },
-        { "slug": "x-large", "size": "2.25rem", "name": "Extra Large" },
-        { "slug": "xx-large", "size": "3rem", "name": "XX-Large" }
+        {
+          "slug": "small",
+          "size": "0.875rem",
+          "name": "Small"
+        },
+        {
+          "slug": "normal",
+          "size": "1rem",
+          "name": "Normal"
+        },
+        {
+          "slug": "medium",
+          "size": "1.25rem",
+          "name": "Medium"
+        },
+        {
+          "slug": "large",
+          "size": "1.5rem",
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "2.25rem",
+          "name": "Extra Large"
+        },
+        {
+          "slug": "xx-large",
+          "size": "3rem",
+          "name": "XX-Large"
+        }
       ]
     }
   },
@@ -53,22 +109,40 @@
         }
       },
       "h1": {
-        "typography": { "fontSize": "3rem", "fontWeight": "700" }
+        "typography": {
+          "fontSize": "3rem",
+          "fontWeight": "700"
+        }
       },
       "h2": {
-        "typography": { "fontSize": "2.25rem", "fontWeight": "500" }
+        "typography": {
+          "fontSize": "2.25rem",
+          "fontWeight": "500"
+        }
       },
       "h3": {
-        "typography": { "fontSize": "1.5rem", "fontWeight": "500" }
+        "typography": {
+          "fontSize": "1.5rem",
+          "fontWeight": "500"
+        }
       },
       "h4": {
-        "typography": { "fontSize": "1.5rem", "fontWeight": "500" }
+        "typography": {
+          "fontSize": "1.5rem",
+          "fontWeight": "500"
+        }
       },
       "h5": {
-        "typography": { "fontSize": "1.5rem", "fontWeight": "500" }
+        "typography": {
+          "fontSize": "1.5rem",
+          "fontWeight": "500"
+        }
       },
       "h6": {
-        "typography": { "fontSize": "1.5rem", "fontWeight": "500" }
+        "typography": {
+          "fontSize": "1.5rem",
+          "fontWeight": "500"
+        }
       }
     },
     "blocks": {
@@ -156,6 +230,14 @@
         },
         "color": {
           "background": "var(--wp--preset--color--light-gray)"
+        }
+      },
+      "core/group.site-footer": {
+        "spacing": {
+          "padding": {
+            "top": "4rem",
+            "bottom": "4rem"
+          }
         }
       }
     }

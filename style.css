@@ -1,192 +1,140 @@
-/*
-Theme Name: FYSIO Thema
-Author: Sharif
-Version: 1.0
-Text Domain: my-fse-theme
-*/
-
-/* === Reset / Base === */
-b/* === Reset === */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Museo Sans', sans-serif;
+.has-primary-background-color {
+  background-color: #1A3827;
+}
+.has-musician-background-color {
+  background-color: #2D0C23;
+}
+.has-secondary-background-color {
+  background-color: #8CAF12;
+}
+.has-light-gray-background-color {
+  background-color: #F5F5F5;
 }
 
-
-body.color-scheme-musician .musician-page {
-  background-color: var(--wp--preset--color--musician);
-  color: white;
+.hero-section,
+.footer-banner,
+.query-loop-colored {
+  color: #E4E4E4;
 }
 
-/* === Layout Helpers === */
-.section {
+.hero-section p,
+.hero-section h1,
+.query-loop-colored p,
+.footer-banner p {
+  color: #E4E4E4;
+}
+
+.footer-banner,
+.hero-section,
+.query-loop-colored,
+.query-loop-white,
+.selection-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.footer-banner {
+  background-color: var(--wp--preset--color--primary);
+  color: #E4E4E4;
+  padding: 2.5rem 2rem;
+}
+
+.footer-banner-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.constrained {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
-.centered {
-  text-align: center;
-}
-
-/* === Post Page Layout === */
-.post-layout {
+.footer-locations {
+  flex: 1 1 auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  flex-direction: row;
+  gap: 4rem;
 }
 
-.post-text {
-  flex: 1 1 50%;
+.footer-locations p {
+  margin: 0;
+  color: #E4E4E4;
 }
 
-.post-image {
-  flex: 1 1 50%;
+.footer-logo {
+  flex: 0 0 auto;
+  max-width: 250px;
 }
 
-.post-buttons {
-  flex-basis: 100%;
-  margin-top: 1.5rem;
-}
-
-/* === Colored Query Loop Block === */
-.query-loop-colored {
-  background-color: var(--wp--preset--color--musician);
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.query-loop-colored .query-text {
-  flex: 1 1 40%;
-}
-
-.query-loop-colored .query-buttons {
-  flex: 1 1 60%;
-}
-
-
-
-/* === White Query Loop Block === */
-.query-loop-white {
-  background-color: var(--wp--preset--color--white);
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.query-loop-white .query-text {
-  flex: 1 1 40%;
-}
-
-.query-loop-white .query-buttons {
-  flex: 1 1 60%;
-}
-
-/* === Selection Buttons === */
-.selection-buttons {
-  margin: 2rem 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* === Hero Section === */
-.hero-section {
-  padding: 4rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.hero-text {
-  flex: 1 1 50%;
-}
-
-.hero-section img {
+.footer-logo img {
   max-width: 100%;
   height: auto;
-  flex: 1 1 45%;
+  display: block;
 }
 
-/* === CTA Section === */
-.cta-section {
-  padding: 3rem 1.5rem;
-  text-align: center;
-  background-color: var(--wp--preset--color--light-gray);
+
+.hero-text,
+.query-text,
+.query-buttons {
+  flex: 1 1 48%;
 }
 
-.cta-section img {
-  margin-bottom: 1rem;
+.wp-block-button__link {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-transform: none;
 }
-
-/* === Contact & Appointment Placeholders === */
-.contact-form-placeholder,
-.appointment-placeholder {
-  background-color: var(--wp--preset--color--light-gray);
-  padding: 2rem;
-  text-align: center;
+/*
+body.color-scheme-primary .footer-banner {
+  background-color: #8CAF12;
 }
-
-.contact-form-placeholder img,
-.appointment-placeholder img {
-  margin-bottom: 1rem;
+body.color-scheme-secondary .footer-banner {
+  background-color: #1A3827;
 }
-
-/* === Responsive === */
+body.color-scheme-musician .footer-banner {
+  background-color: #E74E0E;
+}
+*/
 @media (max-width: 768px) {
-  .post-layout,
+  .hero-section,
   .query-loop-colored,
-  .query-loop-white {
-    flex-direction: column;
-  }
-
-  .post-text,
-  .post-image,
-  .post-buttons,
-  .query-text,
-  .query-buttons {
-    flex: 1 1 100%;
-    width: 100%;
-  }
-
-  .post-image {
-    order: -1;
-  }
-
-  .post-buttons {
-    order: 3;
-  }
-
- .hero-section {
+  .query-loop-white,
+  .footer-banner,
+  .selection-buttons {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-text {
+  .footer-locations,
+  .hero-text,
+  .query-text,
+  .query-buttons {
     flex: 1 1 100%;
   }
 
-  .selection-buttons {
-    flex-direction: column;
-    align-items: center;
+  .footer-locations {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
+
+.footer-banner-inner {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-locations {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-logo {
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+
+
 }
