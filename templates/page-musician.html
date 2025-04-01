@@ -1,16 +1,44 @@
 <!-- wp:template-part {"slug":"header","theme":"my-fse-theme","tagName":"header"} /-->
 
 <!-- wp:group {"className":"musician-page","layout":{"type":"constrained"}} -->
-<!-- wp:heading {"level":1} -->
-Voor Muzikanten
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-Specifieke behandelingen afgestemd op muzikanten.
-<!-- /wp:paragraph -->
-
-<!-- wp:pattern {"slug":"my-fse-theme/query-loop-colored-v2"} /-->
-<!-- wp:post-content /-->
+<div class="wp-block-group musician-page">
+  
+  <!-- wp:heading {"level":1} -->
+  <h1>Voor Muzikanten</h1>
+  <!-- /wp:heading -->
+  
+  <!-- wp:paragraph -->
+  <p>Specifieke behandelingen afgestemd op muzikanten.</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- Inline Query Loop Colored Pattern -->
+  <!-- wp:group {"className":"query-loop-colored","backgroundColor":"musician","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group query-loop-colored has-musician-background-color">
+    
+    <!-- wp:group {"className":"query-text","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group query-text">
+      <!-- wp:paragraph -->
+      <p>Speciaal voor muzikanten: onze gespecialiseerde zorg.</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"className":"query-buttons","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group query-buttons">
+      <!-- wp:query {"query":{"postType":"service","taxQuery":[{"taxonomy":"service_category","terms":["muzikanten"],"field":"slug"}]}} -->
+      <!-- wp:post-template -->
+        <!-- wp:post-title {"isLink":true} /-->
+      <!-- /wp:post-template -->
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+    
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- wp:post-content /-->
+  
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"my-fse-theme","tagName":"footer"} /-->

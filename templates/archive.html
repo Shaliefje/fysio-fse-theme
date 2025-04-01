@@ -1,22 +1,26 @@
 <!-- wp:template-part {"slug":"header","theme":"my-fse-theme","tagName":"header"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
 
   <!-- wp:archive-title /-->
-
+  
   <!-- wp:query -->
+  <div class="wp-block-query">
     <!-- wp:post-template -->
       <!-- wp:post-title {"isLink":true} /-->
       <!-- wp:post-excerpt /-->
     <!-- /wp:post-template -->
-
+    
     <!-- wp:query-pagination -->
       <!-- wp:query-pagination-previous /-->
       <!-- wp:query-pagination-numbers /-->
       <!-- wp:query-pagination-next /-->
     <!-- /wp:query-pagination -->
+  </div>
   <!-- /wp:query -->
 
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"my-fse-theme","tagName":"footer"} /-->

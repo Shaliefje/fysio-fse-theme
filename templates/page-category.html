@@ -1,17 +1,42 @@
 <!-- wp:template-part {"slug":"header","theme":"my-fse-theme","tagName":"header"} /-->
 
 <!-- wp:group {"className":"category-layout","layout":{"type":"constrained"}} -->
-
+<div class="wp-block-group category-layout">
+  
   <!-- wp:post-title /-->
-
+  
   <!-- wp:paragraph -->
-  Hieronder vind je relevante behandelingen.
+  <p>Hieronder vind je relevante behandelingen.</p>
   <!-- /wp:paragraph -->
-
-  <!-- wp:pattern {"slug":"my-fse-theme/query-loop-white-v2"} /-->
-
+  
+  <!-- Inline Query Loop White Pattern -->
+  <!-- wp:group {"className":"query-loop-white","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group query-loop-white">
+    
+    <!-- wp:group {"className":"query-text","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group query-text">
+      <!-- wp:paragraph -->
+      <p>Ontdek onze behandelingen binnen dit specialisme.</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"className":"query-buttons","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group query-buttons">
+      <!-- wp:query {"query":{"postType":"service"}} -->
+      <!-- wp:post-template -->
+      <!-- wp:post-title {"isLink":true} /-->
+      <!-- /wp:post-template -->
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+    
+  </div>
+  <!-- /wp:group -->
+  
   <!-- wp:post-content /-->
-
+  
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"my-fse-theme","tagName":"footer"} /-->

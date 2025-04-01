@@ -1,13 +1,59 @@
 <!-- wp:template-part {"slug":"header","theme":"my-fse-theme","tagName":"header"} /-->
 
-<!-- wp:pattern {"slug":"my-fse-theme/hero-v2"} /-->
-
-<!-- wp:pattern {"slug":"my-fse-theme/selection-buttons-v2"} /-->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<!-- wp:paragraph -->Informatieblok komt hier.<!-- /wp:paragraph -->
+<!-- wp:group {"className":"hero-section has-primary-background-color","backgroundColor":"primary","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group hero-section has-primary-background-color">
+  <!-- wp:group {"className":"hero-text","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group hero-text">
+    <!-- wp:heading {"level":1} -->
+    <h1>Welkom bij Fysiotherapie Leiden</h1>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph -->
+    <p>Persoonlijke zorg voor lichaam en geest.</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:image {"url":"https://via.placeholder.com/600x400","alt":"Hero afbeelding","sizeSlug":"large"} /-->
+</div>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"my-fse-theme/cta-v2"} /-->
+<!-- wp:group {"className":"selection-buttons","layout":{"type":"constrained"}} -->
+<div class="wp-block-group selection-buttons">
+  <!-- wp:buttons -->
+  <div class="wp-block-buttons">
+    <!-- wp:button {"backgroundColor":"primary","url":"/fysiotherapie/"} -->
+    <div class="wp-block-button">
+      <a class="wp-block-button__link has-primary-background-color" href="/fysiotherapie/">Fysiotherapie</a>
+    </div>
+    <!-- /wp:button -->
+    <!-- wp:button {"backgroundColor":"secondary","url":"/specialiteit-handen/"} -->
+    <div class="wp-block-button">
+      <a class="wp-block-button__link has-secondary-background-color" href="/specialiteit-handen/">Specialiteit Handen</a>
+    </div>
+    <!-- /wp:button -->
+    <!-- wp:button {"backgroundColor":"musician","url":"/muziek-performance/"} -->
+    <div class="wp-block-button">
+      <a class="wp-block-button__link has-musician-background-color" href="/muziek-performance/">Muziek &amp; Performance</a>
+    </div>
+    <!-- /wp:button -->
+  </div>
+  <!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+  <!-- wp:paragraph -->
+  <p>Informatieblok komt hier.</p>
+  <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cta-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group cta-section">
+  <!-- wp:paragraph -->
+  <p>Wil je weten wat de mogelijkheden zijn voor je klachten? Maak hier een afspraak bij de fysiotherapeut Leiden</p>
+  <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"my-fse-theme","tagName":"footer"} /-->

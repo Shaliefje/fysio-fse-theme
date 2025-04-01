@@ -1,17 +1,42 @@
 <!-- wp:template-part {"slug":"header","theme":"my-fse-theme","tagName":"header"} /-->
 
 <!-- wp:group {"className":"post-layout","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-
+<div class="wp-block-group post-layout">
+  
   <!-- wp:post-content {"className":"post-text"} /-->
-
+  
   <!-- wp:group {"className":"post-image"} -->
+  <div class="wp-block-group post-image">
     <!-- wp:post-featured-image /-->
+  </div>
   <!-- /wp:group -->
-
+  
   <!-- wp:group {"className":"related-services"} -->
-   <!-- wp:pattern {"slug":"my-fse-theme/query-loop-buttons-v2"} /-->
+  <div class="wp-block-group related-services">
+    
+    <!-- Inline Query Loop Buttons Pattern -->
+    <!-- wp:group {"className":"query-loop-buttons","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group query-loop-buttons">
+      <!-- wp:query {"query":{"postType":"service","perPage":6}} -->
+      <!-- wp:post-template -->
+      <!-- wp:buttons -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"className":"is-style-outline","backgroundColor":"secondary"} -->
+        <div class="wp-block-button">
+          <!-- wp:post-title {"isLink":true} /-->
+        </div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+      <!-- /wp:post-template -->
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+    
+  </div>
   <!-- /wp:group -->
-
+  
+</div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"my-fse-theme","tagName":"footer"} /-->

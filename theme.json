@@ -1,5 +1,17 @@
 {
   "version": 2,
+  "templateParts": [
+    {
+      "slug": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "slug": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
   "settings": {
     "custom": {
       "colorSchemes": [
